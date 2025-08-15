@@ -1,0 +1,13 @@
+﻿using System.Diagnostics.CodeAnalysis;
+using Avalonia.Controls.IconsHero.Internal;
+namespace Avalonia.Controls.IconsHero;
+
+[SuppressMessage("ReSharper", "InconsistentNaming")]
+[SuppressMessage("ReSharper", "UnusedMember.Global")]
+[SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores")]
+public enum IconsHeroCode
+{
+    // phosphor icons
+    [Code("eb9a", Font.PhosphorFill)]
+    Phosphor_Acorn_Fill,
+}
