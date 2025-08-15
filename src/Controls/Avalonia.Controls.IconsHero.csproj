@@ -6,4 +6,9 @@
   <ItemGroup>
     <AvaloniaResource Include="Assets\**"/>
   </ItemGroup>
+  
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Assets\fonts\fluent\fluent-fill.ttf" />
+    <UpToDateCheckInput Remove="Assets\fonts\fluent\fluent-regular.ttf" />
+  </ItemGroup>
 </Project>
