@@ -4,7 +4,8 @@ namespace Avalonia.Controls.IconsHero;
 
 public partial class IconsHero : UserControl
 {
-    public static readonly StyledProperty<IconsHeroCode> CodeProperty = AvaloniaProperty.Register<IconsHero, IconsHeroCode>(nameof(Code), defaultValue: IconsHeroCode.Phosphor_Acorn_Fill);
+    public static readonly StyledProperty<IconsHeroCode> CodeProperty =
+        AvaloniaProperty.Register<IconsHero, IconsHeroCode>(nameof(Code), defaultValue: IconsHeroCode.Fluent_Heart_Filled);
 
     public IconsHero()
     {
