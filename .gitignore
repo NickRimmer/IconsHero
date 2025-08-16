@@ -7,6 +7,7 @@ _temp/
 _publish/
 
 .idea/copilotDiffState.xml
+.idea/workspace.xml
 
 # local only files
 *.local.*
