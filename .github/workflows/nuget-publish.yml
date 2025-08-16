@@ -1,0 +1,36 @@
+name: Publish NuGet Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'NuGet package version to publish'
+        required: true
+        type: string
+
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Build project
+        run: |
+          dotnet build src/Controls/IconsHero.csproj -c Release
+
+      - name: Pack NuGet package
+        run: |
+          dotnet pack src/Controls/IconsHero.csproj -c Release -p:PackageVersion="${{ github.event.inputs.version }}" --output src/Controls/bin/Release
+
+      - name: Push NuGet package
+        run: |
+          $package = Get-ChildItem src/Controls/bin/Release -Filter "IconsHero.Controls.Avalonia.${{ github.event.inputs.version }}.nupkg" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+          if (-not $package) { Write-Error "NuGet package not found."; exit 1 }
+          dotnet nuget push $package.FullName --api-key "${{ secrets.NUGET_API_KEY }}" --source "https://api.nuget.org/v3/index.json"
+        shell: pwsh

@@ -1,4 +1,7 @@
 ﻿<Solution>
+  <Folder Name="/github/">
+    <File Path="..\.github\workflows\nuget-publish.yml" />
+  </Folder>
   <Folder Name="/scripts/">
     <File Path="..\scripts\build-code.ps1" />
     <File Path="..\scripts\publish-nuget.ps1" />
