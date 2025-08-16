@@ -1,6 +1,6 @@
 # IconsHero
 
-[![NuGet](https://img.shields.io/nuget/v/Avalonia.Controls.IconsHero.svg)](https://www.nuget.org/packages/Avalonia.Controls.IconsHero/)
+[![NuGet](https://img.shields.io/nuget/v/IconsHero.Controls.Avalonia.svg)](https://www.nuget.org/packages/IconsHero.Controls.Avalonia/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **IconsHero** is a lightweight Avalonia control that allows you to easily use **font-based icons** in your applications.
@@ -23,7 +23,7 @@ Currently supports:
 Install via NuGet:
 
 ```powershell
-dotnet add package Avalonia.Controls.IconsHero
+dotnet add package IconsHero.Controls.Avalonia
 ```
 
 ---

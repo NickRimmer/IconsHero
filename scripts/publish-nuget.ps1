@@ -1,5 +1,5 @@
 ﻿param(
-    [string]$Version = "1.0.0"
+    [string]$Version
 )
 
 $nugetConfigPath = "nuget.local.json"
@@ -21,16 +21,16 @@ if (-not $nugetConfig.ApiKey) {
 }
 
 $ApiKey = $nugetConfig.ApiKey
-$projectPath = "..\src\Controls\Avalonia.Controls.IconsHero.csproj"
+$projectPath = "..\src\Controls\IconsHero.csproj"
 $Source = "https://api.nuget.org/v3/index.json"
 
-Write-Host "Building Avalonia.Controls.IconsHero..."
+Write-Host "Building IconsHero.Controls.Avalonia..."
 dotnet build $projectPath -c Release
 
 Write-Host "Packing NuGet package..."
 dotnet pack $projectPath -c Release -p:PackageVersion=$Version --output "..\src\Controls\bin\Release"
 
-$packageFile = Get-ChildItem "..\src\Controls\bin\Release" -Filter "Avalonia.Controls.IconsHero.*.nupkg" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+$packageFile = Get-ChildItem "..\src\Controls\bin\Release" -Filter "IconsHero.Controls.Avalonia.*.nupkg" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 
 if (-not $packageFile) {
     Write-Error "NuGet package not found. Packing may have failed."

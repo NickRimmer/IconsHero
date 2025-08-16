@@ -1,4 +1,4 @@
-﻿namespace Avalonia.Controls.IconsHero.Internal;
+﻿namespace IconsHero.Controls.Avalonia.Internal;
 
 internal sealed class CodeAttribute(string code, Font font) : Attribute
 {

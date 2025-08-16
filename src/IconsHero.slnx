@@ -11,9 +11,9 @@
     <File Path="Directory.Packages.props" />
     <File Path="global.json" />
     <File Path="stylecop.json" />
-    <File Path="Avalonia.Controls.IconsHero.sln.DotSettings.user" />
     <File Path="..\README.md" />
+    <File Path="IconsHero.sln.DotSettings.user" />
   </Folder>
-  <Project Path="Controls\Avalonia.Controls.IconsHero.csproj" Type="Classic C#" />
+  <Project Path="Controls\IconsHero.csproj" Type="Classic C#" />
   <Project Path="Demo\Demo.csproj" Type="Classic C#" />
 </Solution>

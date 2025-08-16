@@ -3,7 +3,7 @@
         xmlns:vm="using:Demo.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:iconsHero="clr-namespace:Avalonia.Controls.IconsHero;assembly=Avalonia.Controls.IconsHero"
+        xmlns:avalonia="clr-namespace:IconsHero.Controls.Avalonia;assembly=IconsHero"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Demo.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -12,7 +12,7 @@
 
     <StackPanel Orientation="Horizontal" Spacing="5" VerticalAlignment="Top">
         <TextBlock Text="Example: "/>
-        <iconsHero:IconsHero Code="Fluent_Heart_Filled" FontSize="18" Foreground="Red"/>
+        <avalonia:IconsHero Code="Fluent_Heart_Filled" FontSize="18" Foreground="Red"/>
     </StackPanel>
 
 </Window>

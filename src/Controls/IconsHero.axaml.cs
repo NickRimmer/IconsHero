@@ -1,6 +1,7 @@
-﻿using Avalonia.Controls.IconsHero.Internal;
-
-namespace Avalonia.Controls.IconsHero;
+﻿using Avalonia;
+using Avalonia.Controls;
+using IconsHero.Controls.Avalonia.Internal;
+namespace IconsHero.Controls.Avalonia;
 
 public partial class IconsHero : UserControl
 {

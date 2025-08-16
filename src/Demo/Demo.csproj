@@ -24,6 +24,6 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Controls\Avalonia.Controls.IconsHero.csproj" />
+    <ProjectReference Include="..\Controls\IconsHero.csproj" />
   </ItemGroup>
 </Project>

@@ -2,13 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:Avalonia.Controls.IconsHero"
+             xmlns:avalonia="clr-namespace:IconsHero.Controls.Avalonia"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Avalonia.Controls.IconsHero.IconsHero">
+             x:Class="IconsHero.Controls.Avalonia.IconsHero">
     <TextBlock
         x:Name="TextBlockIcon"
-        Foreground="{Binding $parent[controls:IconsHero].Foreground}"
-        FontSize="{Binding $parent[controls:IconsHero].FontSize}"
+        Foreground="{Binding $parent[avalonia:IconsHero].Foreground}"
+        FontSize="{Binding $parent[avalonia:IconsHero].FontSize}"
         HorizontalAlignment="Center"
         Padding="0"
         Margin="0"

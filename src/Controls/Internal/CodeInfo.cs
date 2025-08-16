@@ -1,4 +1,4 @@
 ﻿using Avalonia.Media;
-namespace Avalonia.Controls.IconsHero.Internal;
+namespace IconsHero.Controls.Avalonia.Internal;
 
 internal sealed record CodeInfo(string Content, FontFamily FontFamily);

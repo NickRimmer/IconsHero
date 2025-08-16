@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <PackageId>Avalonia.Controls.IconsHero</PackageId>
+    <PackageId>IconsHero.Controls.Avalonia</PackageId>
     <Authors>NickRimmer</Authors>
     <Description>Hero icon control for Avalonia UI.</Description>
     <PackageTags>avalonia;icons;ui;controls;phosphor;fluent</PackageTags>
@@ -9,6 +9,8 @@
     <PackageProjectUrl>https://github.com/NickRimmer/IconsHero</PackageProjectUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
+    <RootNamespace>IconsHero.Controls.Avalonia</RootNamespace>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,5 +24,9 @@
   <ItemGroup>
     <UpToDateCheckInput Remove="Assets\fonts\fluent\fluent-fill.ttf" />
     <UpToDateCheckInput Remove="Assets\fonts\fluent\fluent-regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>

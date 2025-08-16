@@ -23,7 +23,7 @@
 
   <!-- Set the Product and Version info -->
   <PropertyGroup>
-    <Product>Avalonia.Controls.IconsHero</Product>
+    <Product>IconsHero</Product>
     <Company>NickRimmer</Company>
     <Copyright>Copyright 2025-$([System.DateTime]::Now.ToString('yyyy')) NickRimmer</Copyright>
 

@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 using Avalonia.Media;
-namespace Avalonia.Controls.IconsHero.Internal;
+namespace IconsHero.Controls.Avalonia.Internal;
 
 internal static class CodeConverter
 {
@@ -13,10 +13,10 @@ internal static class CodeConverter
 
         var fontFamily = attribute.FontFamily switch
         {
-            Font.PhosphorRegular => new FontFamily("avares://Avalonia.Controls.IconsHero/Assets/fonts/#Phosphor"),
-            Font.PhosphorFill => new FontFamily("avares://Avalonia.Controls.IconsHero/Assets/fonts/#Phosphor-Fill"),
-            Font.FluentSystemIconsRegular => new FontFamily("avares://Avalonia.Controls.IconsHero/Assets/fonts/#FluentSystemIcons-Regular"),
-            Font.FluentSystemIconsFilled => new FontFamily("avares://Avalonia.Controls.IconsHero/Assets/fonts/#FluentSystemIcons-Filled"),
+            Font.PhosphorRegular => new FontFamily("avares://IconsHero/Assets/fonts/#Phosphor"),
+            Font.PhosphorFill => new FontFamily("avares://IconsHero/Assets/fonts/#Phosphor-Fill"),
+            Font.FluentSystemIconsRegular => new FontFamily("avares://IconsHero/Assets/fonts/#FluentSystemIcons-Regular"),
+            Font.FluentSystemIconsFilled => new FontFamily("avares://IconsHero/Assets/fonts/#FluentSystemIcons-Filled"),
             _ => throw new ArgumentOutOfRangeException(nameof(attribute.FontFamily), $"Cannot find font family for selected code: {attribute.FontFamily}"),
         };
 

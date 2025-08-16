@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Avalonia.Controls.IconsHero.Internal;
-namespace Avalonia.Controls.IconsHero;
+using IconsHero.Controls.Avalonia.Internal;
+namespace IconsHero.Controls.Avalonia;
 
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
