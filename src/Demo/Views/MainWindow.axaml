@@ -10,15 +10,9 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="Demo">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
-
     <StackPanel Orientation="Horizontal" Spacing="5" VerticalAlignment="Top">
         <TextBlock Text="Example: "/>
-        <iconsHero:IconsHero Code="Phosphor_Acorn_Fill"/>
+        <iconsHero:IconsHero Code="Fluent_Heart_Filled" FontSize="18" Foreground="Red"/>
     </StackPanel>
 
 </Window>
