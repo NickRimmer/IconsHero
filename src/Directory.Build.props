@@ -24,8 +24,8 @@
   <!-- Set the Product and Version info -->
   <PropertyGroup>
     <Product>Avalonia.Controls.IconsHero</Product>
-    <Company>Avalonia.Controls.IconsHero</Company>
-    <Copyright>Copyright 2025-$([System.DateTime]::Now.ToString('yyyy')) Avalonia.Controls.IconsHero</Copyright>
+    <Company>NickRimmer</Company>
+    <Copyright>Copyright 2025-$([System.DateTime]::Now.ToString('yyyy')) NickRimmer</Copyright>
 
     <NeutralLanguage>en</NeutralLanguage>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>

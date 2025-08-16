@@ -1,6 +1,7 @@
 ﻿<Solution>
   <Folder Name="/scripts/">
-    <File Path="scripts\build-code.ps1" />
+    <File Path="..\scripts\build-code.ps1" />
+    <File Path="..\scripts\publish-nuget.ps1" />
   </Folder>
   <Folder Name="/_files/">
     <File Path=".editorconfig" />

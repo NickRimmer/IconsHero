@@ -142,7 +142,7 @@ function Save-FontFiles
         [string]$path
     )
 
-    $fontsDir = "$PSScriptRoot\..\Controls\Assets\fonts"
+    $fontsDir = "$PSScriptRoot\..\src\Controls\Assets\fonts"
     Copy-Item -Path $path -Destination $fontsDir -Force
 }
 
@@ -165,8 +165,8 @@ function Write-Codes
         }
     }
 
-    $iconsFilePath = "$PSScriptRoot\..\Controls\IconsHeroCode.cs.txt"
-    $iconsFilePathTmp = "$PSScriptRoot\..\Controls\IconsHeroCode.cs"
+    $iconsFilePath = "$PSScriptRoot\..\src\Controls\IconsHeroCode.cs.txt"
+    $iconsFilePathTmp = "$PSScriptRoot\..\src\Controls\IconsHeroCode.cs"
 
     $originalContent = Get-Content -Path $iconsFilePath -Raw
     $pattern = '(?<=public enum IconsHeroCode\s*\{)(.*?)(?=\})'

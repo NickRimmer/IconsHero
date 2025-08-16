@@ -6,5 +6,7 @@ riderModule.iml
 _temp/
 _publish/
 
+.idea/copilotDiffState.xml
+
 # local only files
 *.local.*

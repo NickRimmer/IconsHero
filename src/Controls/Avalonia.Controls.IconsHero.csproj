@@ -1,4 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Avalonia.Controls.IconsHero</PackageId>
+    <Authors>NickRimmer</Authors>
+    <Description>Hero icon control for Avalonia UI.</Description>
+    <PackageTags>avalonia;icons;ui;controls;phosphor;fluent</PackageTags>
+    <RepositoryUrl>https://github.com/NickRimmer/IconsHero</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/NickRimmer/IconsHero</PackageProjectUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Avalonia" />
   </ItemGroup>
